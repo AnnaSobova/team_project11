@@ -1,18 +1,41 @@
+.section__space{
+    padding-left: 20px;
+}
+
+
 .certificate-link {
-    font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 18px;
-     line-height: 28px;
+    font-size: 12px;
+    line-height: 20px;
     text-decoration-line: underline;
     color: var(--accent-color);
 }
 
-.text-color{
-    color: green;
-}
 .about{
-    text-align: none;
+    text-align: start;
+
 }
-.text-color{
-    background-color: aqua;
+
+.about__pic{
+ margin: 20px;
+}
+.teacher-name{
+font-family: 'Montserrat';
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.08em;
+color: var(--primary-text-color);   
+
+
+padding-bottom:8px;
+}
+.experience__history{
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 20px;
+   color: var(--tertiary-text-color);
+   padding-top: 8px;
+   padding-bottom: 8px;
+   
 }
