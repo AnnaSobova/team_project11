@@ -98,10 +98,6 @@ a {
   }
 }
 
-.section__space {
-  padding-left: 20px;
-}
-
 .certificate-link {
   font-weight: 500;
   font-size: 12px;
@@ -112,6 +108,10 @@ a {
 
 .about {
   text-align: start;
+}
+
+.section__about {
+  margin-left: 5px;
 }
 
 .about__pic {
@@ -135,5 +135,18 @@ a {
   color: var(--tertiary-text-color);
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.experience__item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: var(--secondary-bg-color);
+  margin-bottom: 20px;
+}
+
+.experience__item:nth-last-child(4n) {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
