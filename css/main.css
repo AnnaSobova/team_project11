@@ -103,12 +103,19 @@ a {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: var(--accent-color);
 }
 
 .text-color {
   color: green;
+}
+
+.about {
+  text-align: none;
+}
+
+.text-color {
+  background-color: aqua;
 }
 /*# sourceMappingURL=main.css.map */
