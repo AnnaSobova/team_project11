@@ -108,11 +108,7 @@ a {
   color: var(--accent-color);
 }
 
-.color {
-  background-color: aqua;
-}
-
 .text-color {
-  color: blueviolet;
+  color: green;
 }
 /*# sourceMappingURL=main.css.map */
