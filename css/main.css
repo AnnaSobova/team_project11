@@ -111,11 +111,13 @@ a {
 }
 
 .section__about {
-  margin-left: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .about__pic {
-  margin: 20px;
+  display: block;
+  padding: 20px 0;
 }
 
 .teacher-name {
@@ -125,7 +127,10 @@ a {
   line-height: 24px;
   letter-spacing: 0.08em;
   color: var(--primary-text-color);
-  padding-bottom: 8px;
+}
+
+.experience {
+  margin-top: 20px;
 }
 
 .experience__history {
@@ -180,8 +185,8 @@ a {
 
 .name-underline::after {
   content: ' ';
-  display: inline-block;
-  min-width: 280px;
+  display: block;
+  width: 280px;
   height: 2px;
   background-image: url("/src/images/underline.svg");
 }
