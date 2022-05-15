@@ -187,33 +187,63 @@ a {
   display: block;
   width: 280px;
   height: 2px;
-  background-image: url("/src/images/underline.svg");
+  background-image: url("/src/images/first-underline.svg");
   margin-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
   .about_section {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-between;
     margin-top: 40px;
+  }
+  .about__pic {
+    padding: 0;
   }
   .description-teacher-section {
     width: 402px;
   }
   .name-underline::after {
-    content: ' ';
-    display: block;
     width: 400px;
     height: 2px;
     background-image: url("/src/images/second-underline.svg");
-    margin-top: 8px;
   }
   .experience__history {
     padding-bottom: 24px;
   }
   .experience__history ::before {
     margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .about_section {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 80px;
+  }
+  .about__pic {
+    margin-right: 172px;
+  }
+  .teacher-name {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .name-underline::after {
+    width: 668px;
+    background-image: url("/src/images/third-underline.svg");
+  }
+  .description-teacher-section {
+    min-width: 668px;
+  }
+  .experience__checkmark::before {
+    min-width: 24px;
+    height: 20px;
+    margin-right: 35px;
+  }
+  .experience {
+    margin-top: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
