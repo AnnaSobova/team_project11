@@ -185,9 +185,10 @@ a {
 .name-underline::after {
   content: ' ';
   display: block;
-  width: 280px;
-  height: 2px;
-  background-image: url("/src/images/first-underline.svg");
+  height: 0;
+  border: 1px solid var(--tertiary-text-color);
+  border-radius: 1px;
+  background-color: var(--tertiary-text-color);
   margin-top: 8px;
 }
 
@@ -204,16 +205,16 @@ a {
   .description-teacher-section {
     width: 402px;
   }
-  .name-underline::after {
-    width: 400px;
-    height: 2px;
-    background-image: url("/src/images/second-underline.svg");
-  }
   .experience__history {
     padding-bottom: 24px;
+    font-size: 10px;
   }
   .experience__history ::before {
     margin-bottom: 24px;
+  }
+  .experience__description {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
@@ -229,10 +230,6 @@ a {
     font-size: 30px;
     line-height: 37px;
   }
-  .name-underline::after {
-    width: 668px;
-    background-image: url("/src/images/third-underline.svg");
-  }
   .description-teacher-section {
     min-width: 668px;
   }
@@ -243,6 +240,19 @@ a {
   }
   .experience {
     margin-top: 32px;
+  }
+  .experience__history,
+  .certificate-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .experience__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .history-item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
