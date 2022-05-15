@@ -185,7 +185,7 @@ a {
 .name-underline::after {
   content: ' ';
   display: block;
-  height: 0;
+  height: 1;
   border: 1px solid var(--tertiary-text-color);
   border-radius: 1px;
   background-color: var(--tertiary-text-color);
