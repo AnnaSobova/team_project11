@@ -98,14 +98,6 @@ a {
   }
 }
 
-.certificate-link {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 20px;
-  text-decoration-line: underline;
-  color: var(--accent-color);
-}
-
 .about {
   text-align: start;
 }
@@ -138,7 +130,6 @@ a {
   font-size: 12px;
   line-height: 20px;
   color: var(--tertiary-text-color);
-  padding-top: 8px;
   padding-bottom: 8px;
 }
 
@@ -150,7 +141,7 @@ a {
   width: 20px;
   height: 2px;
   background-color: var(--accent-color);
-  margin-bottom: 4px;
+  margin-bottom: 24px;
 }
 
 .experience__item {
@@ -183,6 +174,14 @@ a {
   background-repeat: no-repeat;
 }
 
+.certificate-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
+
 .name-underline::after {
   content: ' ';
   display: block;
@@ -190,5 +189,31 @@ a {
   height: 2px;
   background-image: url("/src/images/underline.svg");
   margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .about_section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .description-teacher-section {
+    width: 402px;
+  }
+  .name-underline::after {
+    content: ' ';
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-image: url("/src/images/second-underline.svg");
+    margin-top: 8px;
+  }
+  .experience__history {
+    padding-bottom: 24px;
+  }
+  .experience__history ::before {
+    margin-bottom: 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
