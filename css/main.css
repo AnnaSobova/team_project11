@@ -219,7 +219,6 @@ a {
 
 @media screen and (min-width: 1680px) {
   .about_section {
-    align-items: flex-start;
     justify-content: flex-start;
     margin-top: 80px;
   }
