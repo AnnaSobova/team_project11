@@ -302,6 +302,12 @@ a {
   fill: var(--accent-color);
 }
 
+.modal-certificat-content {
+  background-color: #fff;
+  max-width: 800px;
+  padding: 20px;
+}
+
 .mobile-menu__close-btn {
   position: absolute;
   background-color: transparent;
@@ -322,7 +328,7 @@ a {
   font-size: 18px;
   line-height: 180%;
   letter-spacing: 0.03em;
-  color: white;
+  color: #3D3D3D;
 }
 
 .certificat-title__description {
@@ -330,9 +336,5 @@ a {
   font-size: 12px;
   line-height: 20px;
   color: #3D3D3D;
-}
-
-.modal-certificat-content {
-  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
