@@ -265,12 +265,21 @@ a {
   height: 100%;
   background-color: rgba(17, 21, 24, 0.9);
   transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.backdrop:target {
+  opacity: 1;
+  visibility: visible;
 }
 
 .backdrop.is-hidden {
-  top: 100%;
-  pointer-events: none;
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-certificat {
@@ -278,43 +287,29 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
+  padding: 30px 20px;
 }
 
 .mobile-menu__close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 15px;
+  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   border: 1px solid var(--icon-grey-main-color);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
   padding: 0;
   cursor: pointer;
-}
-
-.close-btn__icon :focus,
-.close-btn__icon:hover {
-  fill: var(--accent-color);
 }
 
 .modal-certificat-content {
   background-color: #fff;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.mobile-menu__close-btn {
-  position: absolute;
-  background-color: transparent;
-  right: 20px;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+  max-width: 600px;
+  min-height: 400px;
+  padding: 20px 30px;
 }
 
 .modal-link {
@@ -328,13 +323,26 @@ a {
   font-size: 18px;
   line-height: 180%;
   letter-spacing: 0.03em;
-  color: #3D3D3D;
+  color: #111518;
+  padding-bottom: 20px;
 }
 
 .certificat-title__description {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
   color: #3D3D3D;
+}
+
+@media screen and (min-width: 1680px) {
+  .certificat-title__description {
+    font-size: 18px;
+  }
+  .certificat-title__space {
+    padding: 10px 0;
+  }
+  .modal-certificat-content {
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
