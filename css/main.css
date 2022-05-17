@@ -256,7 +256,7 @@ a {
   }
 }
 
-.backdrop {
+.backdrop-link {
   overflow: auto;
   position: fixed;
   top: 0;
@@ -267,14 +267,16 @@ a {
   transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
   overflow-y: auto;
   overflow-x: hidden;
-}
-
-.backdrop:target {
   opacity: 1;
   visibility: visible;
 }
 
-.backdrop.is-hidden {
+.backdrop-link:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop-link.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

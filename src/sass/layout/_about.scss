@@ -161,7 +161,7 @@ color: var(--primary-text-color);
 
 
 
-   .backdrop {
+   .backdrop-link {
        overflow: auto;
        position: fixed;
        top: 0;
@@ -172,14 +172,16 @@ color: var(--primary-text-color);
        transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
        overflow-y: auto;
        overflow-x: hidden;
-   }
+       opacity: 1;
+       visibility: visible;
+       }
   
-        .backdrop:target{
+        .backdrop-link:target{
             opacity: 1;
             visibility: visible;
         }
 
-   .backdrop.is-hidden {
+   .backdrop-link.is-hidden {
        opacity: 0;
        visibility: hidden;
        pointer-events: none;
@@ -192,6 +194,10 @@ color: var(--primary-text-color);
      justify-content: center;
      padding: 30px 20px;
     }
+
+    
+
+
         .mobile-menu__close-btn {
             position: absolute;
             top: 15px;
@@ -237,8 +243,6 @@ color: var(--primary-text-color);
                 line-height: 20px;
                 color: #3D3D3D;
         }
-
-
 
           @media screen and (min-width: 1680px){
             .certificat-title__description { 
