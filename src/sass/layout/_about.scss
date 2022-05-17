@@ -170,8 +170,6 @@ color: var(--primary-text-color);
        height: 100%;
        background-color: rgba(17, 21, 24, 0.9);
        transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
-       opacity: 0;
-       visibility: hidden;
        overflow-y: auto;
        overflow-x: hidden;
    }
@@ -210,40 +208,35 @@ color: var(--primary-text-color);
             cursor:pointer;
             }
     
-
-  
    .modal-certificat-content{
           background-color: #fff;
           max-width: 600px;
           min-height: 400px;
           padding: 20px 30px;
           
-      }
-                 
-               
+      }       
     
-    
+    .modal-link{
+        background-color: transparent;
+        border:none;
+    }
+    .certificat-title{
+        display: block;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 180%;
+            letter-spacing: 0.03em;
+            color: #111518;
+            padding-bottom: 20px;
+            margin-top: 20px;
 
-.modal-link{
-    background-color: transparent;
-    border:none;
-}
-.certificat-title{
-    display: block;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 180%;
-        letter-spacing: 0.03em;
-        color: #111518;
-        padding-bottom: 20px;
-
-      }
-      .certificat-title__description{
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 20px;
-            color: #3D3D3D;
-      }
+        }
+        .certificat-title__description{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                color: #3D3D3D;
+        }
 
 
 
@@ -261,7 +254,6 @@ color: var(--primary-text-color);
             }
           }
      
-//  fresh
 
 
 
